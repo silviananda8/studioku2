@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.min.css" />
+      <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Studioku</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <img src="../assets/img/Studioku.png" class="rounded-circle mr-sm-2" style="width: 50px; height: 50px;">
+        <a class="navbar-brand" href="home.html">Studioku</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="btn btn btn-outline-info text-light mr-3 tombol font-weight-normal" href="loginPemilik.html">Pemilik Studio</a>
+            <button type="button" class="btn btn-info tombol font-weight-normal" data-toggle="modal" data-target="#modalMasuk" href="#">Pesan Studio</button> 
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area mb-5">
+      <div class="banner_inner d-flex align-items-center">
+        <div class=" container">
+          <div
+            class="banner_content mt-5 "
+          >
+          <h2>Detail Studio</h2>
+            
+          </div>
+        </div>
+      </div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb cont pl-4">
+            <li class="breadcrumb-item"><a href="#">Cari Studio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail Studio</li>
+          </ol>
+        </nav>
+
+    </section>
+
+
+    <!--================End Home Banner Area =================-->
+  
+  <div class="container mb-5">
+    <div class="row justify-content-center mb-4 mt-4">
+      <div class="col-lg-6">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/img/menengah.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/img/premium.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/img/studio.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        
+      </div>
+      <div class="col">              
+              <h3 class="c">Nama Studio musik</h3>
+              <div><span class="badge badge-warning">Premium </span><small> Telah dikonfirmasi</small></div> 
+              <div class="place_review">
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <span>(210 review)</span>
+              </div>
+              <p class="card-text font-weight-bold mt-2" style="font-size: 26px; color: #17a2b8;">Rp 50.000 <small>per jam</small></p>
+              <div><p> Minimal booking 2 jam</p></div> 
+              <div class="card" style="width: 25rem;">
+        <div class="card-body">
+      <div class="form-group">
+        <label for="tanggal">Tanggal booking</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="30/04/2020">
+      </div>
+      <div class="row"> 
+        <div class="col-lg"> 
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Waktu mulai</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>03:00</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+       </div>
+       <div class="col-lg"> 
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Waktu selesai</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>05:00</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+       </div>
+     </div>
+          <a href="#" class="btn btn-info">Booking</a>
+        </div>
+      </div>
+        </div>
+    </div>
+
+    <!-- deskripsi studio -->
+
+    <nav >
+      <div class="nav nav-tabs " id="nav-tab" role="tablist">
+        <a class="nav-item nav-link link-black active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-home"></i> Deskripsi</a>
+        <a class="nav-item nav-link link-black" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-image"></i> Fasilitas</a>
+        <a class="nav-item nav-link link-black" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-phone"></i> Review</a>
+      </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <p> Ruang kontrol & stan yang dirawat sepenuhnya dengan akustik yang luar biasa di jantung Hollywood. Insinyur berpengalaman dan produksi in-house semuanya direkam pada konsol Raven yang canggih. Kami juga menawarkan langganan studio sebesar $ 800 / bulan yang memberi Anda empat blok waktu 8 jam per bulan. Itu setara dengan 32 jam waktu studio seharga $ 800. Harga dan penawaran yang tidak ada duanya! Untuk pemesanan dan info, silakan hubungi saya langsung (323) 618-9528.
+            Pemesanan minimum:
+  3 jam
+  Hunian Studio Max:
+  9 orang
+  Jam studio:
+  Pesan untuk ketersediaan
+  Menerima pemesanan:
+  Hari yang sama diterima
+  Diskon tarif hari:
+  Studio pesan untuk lebih</p>
+            <h6>Alamat</h6>
+            <p> Jl. Singosari 12 No.7</p>
+            <p> Ruangan A8</p>
+            <h6> Aturan pemesanan</h6>
+            <p> pemesanan dilakukan minimal 2 jam sebelum main</p>
+            <h6>  Jam kerja</h6>
+            <p> 07:00 - 18:00</p>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <p>Stan vokal, area lounge, kafe di tempat, mesin penjual otomatis, internet, AC,
+kamar kecil, RAVEN MTi2 Pro Tools 12 & Logic Pro X Neumann TLM-103 Mikrofon Native Instruments Komplete Kontrol 61 Akai Profesional mpc
+Renaissance Midi produksi Focusrite Stasiun Pusat Antelope Audio
+Discreet 8 Bluebird Mikrofon JBL MKii Monitor Rockville Monitor
+Mac Pro </p>
+<h6> Alat musik</h6>
+<p> Gitar                     3 <br>  <hr>
+  Bass                     4 <br> <hr>  
+  MIc      6 <br> <hr>  
+  drum      2 <br>  <hr>  
+</p>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="row">
+              <div class="col-lg-6">
+                <div class="row total_rate">
+                  <div class="col-6">
+                    <div class="box_total">
+                      <h5>Overall</h5>
+                      <h4>4.0</h4>
+                      <h6>(03 Reviews)</h6>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="rating_list">
+                      <h3>Based on 3 Reviews</h3>
+                      <ul class="list">
+                        <li>
+                          <a href="#"
+                            >5 Star
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >4 Star
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >3 Star
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >2 Star
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >1 Star
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_list">
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="img/product/single-product/review-1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>Blake Ruiz</h4>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="img/product/single-product/review-2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>Blake Ruiz</h4>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="img/product/single-product/review-3.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>Blake Ruiz</h4>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="review_box">
+                  <h4>Add a Review</h4>
+                  <p>Your Rating:</p>
+                  <ul class="list">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-star"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <p>Outstanding</p>
+                  <form
+                    class="row contact_form"
+                    action="contact_process.php"
+                    method="post"
+                    id="contactForm"
+                    novalidate="novalidate"
+                  >
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          placeholder="Your Full name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="number"
+                          name="number"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          id="message"
+                          rows="1"
+                          placeholder="Review"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                      <button
+                        type="submit"
+                        value="submit"
+                        class="btn btn-info"
+                      >
+                        Submit Now
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+  <!-- footnote -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-4">Tentang Kami</h2>
+            <h2><img src="../assets/img/Studioku.png" class="rounded-circle mr-sm-2" style="width: 79px; height: 70px;">Studioku</h2>
+                <p>Kami menyediakan berbagai fitur untuk mempermudah para musisi saat ingin memesan studio musik dan membantu para pemilik studio untuk memasarkan studionya</p>
+          </div>
+          <div class="col-lg-8 ml-auto">
+            <div class="row">
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Kota</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">Surabaya</a></li>
+                  <li><a href="#">Jakarta</a></li>
+                  <li><a href="#">Yogyakarta</a></li>
+                  <li><a href="#">Bali</a></li>
+                  <li><a href="#">Bandung</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Jenis Studio</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">Ruang latihan</a></li>
+                  <li><a href="#">Ruang podcastm</a></li>
+                  <li><a href="#">Studio kecil</a></li>
+                  <li><a href="#">Studio menengah</a></li>
+                  <li><a href="#">Studio premium</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="fab fa-facebook-square"></i>    Facebook</a></li>
+                  <li><a href="#"><i class="fab fa-instagram-square"></i>   Instagram</a></li>
+                  <li><a href="#"><i class="fab fa-twitter-square"></i>    Twitter</a></li>
+                  <li><a href="#"><i class="fab fa-whatsapp-square"></i>    0898-8767-988</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Studioku</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+  
+    <!-- pendaftaran -->
+    
+      <!-- Modal masuk-->
+      <div class="modal fade " id="modalMasuk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title font-weight-bolder" id="exampleModalCenterTitle ">Masuk</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Lupa Password</label>
+                </div>
+                <button type="submit" class="btn btn-info btn-block mb-3 tombol font-weight-bolder">Masuk</button>
+                <a href="#lost" type="button" data-toggle="modal" data-target="#modalDaftar" data-dismiss="modal" >Belum Punya Akun?
+                  <button type="submit" class="badge badge-pill badge-primary" data-dismiss="modal">Daftar</button>
+                </a>
+                <hr><small class="form-text text-muted text-center">Masuk Dengan Akun</small>
+                <div class="row">
+                  <div class="col mt-3  mb-3 text-center">
+                  <button type="masuk" class="btn btn-outline-primary btn-lg-4 btn-block masuk">
+                    <a href="#" class="btn-google mb-20 tombol">
+                    <i class="fa fa-google"></i>
+                      Google
+                    </a>
+                  </button>
+                 </div>
+                </div>  
+                <div>
+                
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Akhir Modal masuk-->
+
+
+      <!-- Modal Daftar-->
+      <div class="modal fade " id="modalDaftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title font-weight-bolder" id="exampleModalCenterTitle ">Daftar</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nama Lengkap</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Alamat Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Konfirmasi Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block mb-3 tombol font-weight-bolder">Daftar</button>
+                <a href="#lost" type="button" data-toggle="modal" data-target="#modalMasuk" data-dismiss="modal" >Sudah Punya Akun?
+                  <button type="submit" class="badge badge-pill badge-primary" data-dismiss="modal">Masuk</button>
+                </a>
+                <hr><small class="form-text text-muted text-center">Daftar Dengan Akun</small>
+                <div class="row">
+                  <div class="col mt-3  mb-3 text-center">
+                  <button type="masuk" class="btn btn-outline-primary btn-lg-4 btn-block masuk">
+                    <a href="#" class="btn-google mb-20 tombol">
+                    <i class="fa fa-google"></i>
+                      Google
+                    </a>
+                  </button>
+                 </div>
+                </div>  
+                <div>
+                
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Akhir Modal daftar-->
+
+    <!-- akhir pendaftaran -->
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

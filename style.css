@@ -11,6 +11,19 @@
 		color: white ! important;
 
 }
+.link-black{
+		color: black ! important;
+
+}
+.link-green{
+	color: #17a2b8 ! important;
+}
+
+.list-booking img{
+	height: 200px;
+	width: 250px;
+	margin-top: 20px;
+}
 
 
 
@@ -98,6 +111,17 @@
 	padding: 20px;
 	margin-bottom: 200px;
 }
+
+.form-filter{
+	box-shadow: 0 1px 7px rgba(0,0,0,0.5);
+	border-radius: 7px;
+	background-color: white;
+	margin-top: 100px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
 
 
 /*judul*/
@@ -233,6 +257,28 @@
   .site-footer .footer-heading {
     font-size: 16px;
     color: #fff; }
+
+
+  /*detail produk*/
+
+  .banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+    min-height: 90px;
+    background: #f6f6f6;
+    z-index: 1;
+    line-height: 10px;
+    font-size: 24px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #17a2b8;
+
+}
+
+
 
 
 /* DEKSTOP VERSI*/
